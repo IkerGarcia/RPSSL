@@ -57,8 +57,10 @@ def choice(ch, evt):
     print("Raspberry Pi wins")
     print("Score: %d\n" % score)
 
+explorerhat.touch.pressed(choice) #Calls the function when a touch pad is pressed.
+
 while True:
- try:  
-   explorerhat.touch.pressed(choice) #Calls the function when a touch pad is pressed.
- except KeyboardInterrupt:
-   break
+  try:
+    pass
+  except KeyboardInterrupt:
+    break
